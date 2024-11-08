@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+#fridge-display {
+    width: 90vw;
+    height: 60vh;
+    margin: auto;
+    padding: 10px;
+    border: 5px solid #333;
+    background-color: #e0e0e0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#clock {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.content-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: white;
+}
+#temp-display, #weather-display {
+    font-size: 1.5rem;
+    color: #007BFF;
+    cursor: pointer;
+}
+iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
