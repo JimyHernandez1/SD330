@@ -1,1 +1,129 @@
-Hello World From Jimy 
+<!doctype html>
+<html>
+<head>
+    <title>GitHub Repository File List</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://graphicpear.com/wp-content/uploads/2016/05/01.jpg'); /* Replace 'background.jpg' with your actual path */
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 1.3em;
+        }
+
+        #intro {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img.avatar {
+            display: block;
+            margin: 10px auto 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #files {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #files p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 0.9em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body onload="Filelist()">
+
+    <header>
+        <h1>Welcome to SD330 Repository</h1>
+        <p>Explore the files in my repository below</p>
+    </header>
+
+    <div id="intro">
+        <img src="https://media.tenor.com/AeEkbaV3e9MAAAAM/cat-tongue.gif" alt="Your Avatar" class="avatar"> <!-- Replace 'avatar.jpg' with your actual avatar -->
+        <p>
+            Hi there! This page lists the files available in my GitHub repository. Click on any file name to view it directly.
+        </p>
+    </div>
+
+    <div id="files">
+        <p>Loading files... Please wait.</p>
+    </div>
+
+    <footer>
+        <p>Jimy Hernandez</p>
+    </footer>
+
+    <script>
+        async function Filelist() {
+            let htmlString = "";
+
+            // Replace with your GitHub username/repository
+            const response = await fetch("https://api.github.com/repos/JimyHernandez1/SD330/contents/");
+            const data = await response.json();
+
+            for (let file of data) {
+                const fname = file.name;
+                const fpath = `https://JimyHernandez1.github.io/SD330/${fname}`;
+                htmlString += `<p><a href="${fpath}" target="_blank">${fname}</a></p>`;
+            }
+
+            document.getElementById('files').innerHTML = htmlString;
+        }
+    </script>
+
+</body>
+</html>
+
