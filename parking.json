@@ -1,0 +1,145 @@
+{
+    "parkingLots": [
+      {
+        "name": "Foy Parking Lot",
+        "map": "mapFoy.jpg",
+        "totalSpaces": 200,
+        "comments": "Closest to the Science Building.",
+        "location": "North Campus",
+        "openHours": "6 AM - 10 PM",
+        "surveillance": true,
+        "spaces": [
+          {
+            "id": "F001",
+            "type": "Student",
+            "status": "Available",
+            "reservedDateTime": null,
+            "filledDateTime": null
+          },
+          {
+            "id": "F002",
+            "type": "Faculty/Staff",
+            "status": "Filled",
+            "reservedDateTime": null,
+            "filledDateTime": "2024-11-25T08:30:00"
+          },
+          {
+            "id": "F003",
+            "type": "Handicap",
+            "status": "Available",
+            "reservedDateTime": null,
+            "filledDateTime": null
+          },
+          {
+            "id": "F004",
+            "type": "Reserved",
+            "status": "Reserved",
+            "reservedDateTime": "2024-11-25T07:00:00",
+            "filledDateTime": null
+          },
+          {
+            "id": "F005",
+            "type": "Student",
+            "status": "Available",
+            "reservedDateTime": null,
+            "filledDateTime": null
+          },
+          {
+            "id": "F006",
+            "type": "Faculty/Staff",
+            "status": "Available",
+            "reservedDateTime": null,
+            "filledDateTime": null
+          },
+          {
+            "id": "F007",
+            "type": "Handicap",
+            "status": "Filled",
+            "reservedDateTime": null,
+            "filledDateTime": "2024-11-25T09:00:00"
+          },
+          {
+            "id": "F008",
+            "type": "Student",
+            "status": "Available",
+            "reservedDateTime": null,
+            "filledDateTime": null
+          },
+          {
+            "id": "F009",
+            "type": "Faculty/Staff",
+            "status": "Available",
+            "reservedDateTime": null,
+            "filledDateTime": null
+          },
+          {
+            "id": "F010",
+            "type": "Reserved",
+            "status": "Reserved",
+            "reservedDateTime": "2024-11-25T10:30:00",
+            "filledDateTime": null
+          },
+          {
+            "id": "F011",
+            "type": "Student",
+            "status": "Filled",
+            "reservedDateTime": null,
+            "filledDateTime": "2024-11-25T08:45:00"
+          },
+          {
+            "id": "F012",
+            "type": "Handicap",
+            "status": "Available",
+            "reservedDateTime": null,
+            "filledDateTime": null
+          }
+        ]
+      },
+      {
+        "name": "Midrise Lot",
+        "map": "mapMidrise.jpg",
+        "totalSpaces": 150,
+        "comments": "Popular for evening classes.",
+        "location": "South Campus",
+        "openHours": "6 AM - 11 PM",
+        "surveillance": false
+      },
+      {
+        "name": "Riverview Lot",
+        "map": "mapRiverview.jpg",
+        "totalSpaces": 300,
+        "comments": "Adjacent to the Student Union.",
+        "location": "Main Campus",
+        "openHours": "24/7",
+        "surveillance": true
+      },
+      {
+        "name": "Dyson Lot",
+        "map": "mapDyson.jpg",
+        "totalSpaces": 500,
+        "comments": "Covered parking with EV charging.",
+        "location": "East Campus",
+        "openHours": "6 AM - 12 AM",
+        "surveillance": true
+      },
+      {
+        "name": "Fontaine Lot",
+        "map": "mapFontaine.jpg",
+        "totalSpaces": 180,
+        "comments": "Close to athletic facilities.",
+        "location": "West Campus",
+        "openHours": "5 AM - 9 PM",
+        "surveillance": true
+      },
+      {
+        "name": "Northend Lot",
+        "map": "mapNorthend.jpg",
+        "totalSpaces": 220,
+        "comments": "Overflow parking for events.",
+        "location": "North Campus",
+        "openHours": "6 AM - 8 PM",
+        "surveillance": false
+      }
+    ]
+  }
+  
