@@ -1,0 +1,298 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 15px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff4444;
+    color: #000000;
+    transform: translateY(-2px);
+}
+
+button[data-page] {
+    margin: 10px;
+}
+
+/* Navbar Styling */
+#navbar {
+    background-color: #fafafa;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #000000;
+}
+
+#navbar img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #ff0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #000000;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+/* Hero Section */
+.hero {
+    height: 350px;
+    position: relative;
+    margin-bottom: 50px;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #000000;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    margin: 0;
+    width: 100%;
+}
+
+/* Enhanced 404 Page Styling */
+body.error-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('404-bkg.jpg') no-repeat center center/cover;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    width: 500px;
+    margin: auto;
+    border: 2px solid #000000;
+}
+
+.error-container h1 {
+    font-size: 100px;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.error-container p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin: 15px 0 25px;
+    font-weight: 500;
+}
+
+.error-container button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.error-container button:hover {
+    background-color: #ff4444;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+/* Add fallback gradient if image fails */
+@media (prefers-reduced-motion: reduce) {
+    body.error-page {
+        background: radial-gradient(circle, #ff0000, #7f0000);
+        animation: none;
+    }
+}
+
+@keyframes animateBackground {
+    0% {
+        background: radial-gradient(circle, #ff0000, #7f0000);
+    }
+    100% {
+        background: radial-gradient(circle, #7f0000, #ff0000);
+    }
+}
+
+/* Parking Lots Page Styling */
+.lots-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.lot-card {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.lot-card:hover {
+    transform: scale(1.05);
+}
+
+.lot-card h2 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.lot-card p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #34495e;
+}
+
+.lot-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+.view-spaces-btn {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid #000000;
+}
+
+.view-spaces-btn:hover {
+    background-color: #ff4444;
+    color: #000000;
+}
+
+/* Parking Spaces Page Styling */
+.spaces-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.space-card {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.space-card h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.space-card p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #34495e;
+}
+
+/* Parking Portal Main Page Styling */
+.parking-map {
+    max-width: 100%;
+    margin: 20px auto;
+    border: 5px solid #000000;
+    display: block;
+    margin-top: 50px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.button-container button {
+    padding: 14px 25px;
+    font-size: 14px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button-container button:hover {
+    background-color: #ff4444;
+    color: #000000;
+    transform: scale(1.1);
+}
